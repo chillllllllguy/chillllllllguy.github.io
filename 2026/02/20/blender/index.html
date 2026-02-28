@@ -140,7 +140,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2026-02-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-02-20T13:09:19.713Z">
+<meta property="article:modified_time" content="2026-02-28T09:38:17.364Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Blender">
 <meta property="article:tag" content="basic">
@@ -600,8 +600,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-02-20 21:09:19</span>
-            <span class="mobile">2026-02-20 21:09:19</span>
+            <span class="desktop">2026-02-28 17:38:17</span>
+            <span class="mobile">2026-02-28 17:38:17</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -673,13 +673,41 @@
 <h4 id="others"><a href="#others" class="headerlink" title="others"></a>others</h4><ul>
 <li>移動+shift -&gt; 緩慢移動</li>
 <li>移動+ctrl -&gt; 半格移動</li>
-<li>ctrl+A -&gt; 移動改為初始值</li>
 <li>alt+S&#x2F;R&#x2F;G -&gt; 物件回到原縮放&#x2F;旋轉&#x2F;位置</li>
 <li>T -&gt; left function</li>
 <li>N -&gt; right function</li>
 <li>1&#x2F;3&#x2F;7 -&gt; 正面&#x2F;側面&#x2F;俯視(+ Ctrl相反)</li>
 </ul>
 <h3 id="物件變形"><a href="#物件變形" class="headerlink" title="物件變形"></a>物件變形</h3><p>G -&gt; 移動物件<br>S -&gt; 縮放物件<br>R -&gt; 旋轉物件<br>G&#x2F;S&#x2F;R + X&#x2F;Y&#x2F;Z -&gt; 軸線平移&#x2F;縮放&#x2F;旋轉物件(+數字 平移距離)<br>G + Shift + Z -&gt; XY軸平面移動<br>Alt + G&#x2F;S&#x2F;R -&gt; 回到初始設定<br>B(Box) -&gt; 畫框同時選所有物件<br>C -&gt; 選取多個物件(+ Wheel Up&#x2F;Down縮小放大圓圈)</p>
+<h3 id="物件"><a href="#物件" class="headerlink" title="物件"></a>物件</h3><p>shift + A -&gt; mash -&gt; 新增物件<br>左下 -&gt; add uv square -&gt; 決定面數(圓形) &#x2F; 大小 &#x2F; ring數 (決定後無法修改 除非新增新物件)<br>左側 -&gt; move -&gt; 移動物件<br>點選 + delete -&gt; 刪除</p>
+<h4 id="選取多個物件"><a href="#選取多個物件" class="headerlink" title="選取多個物件"></a>選取多個物件</h4><ul>
+<li>choose one + shift</li>
+<li>B -&gt; 圈選</li>
+<li>C -&gt; 移動選取</li>
+</ul>
+<h4 id="複製-x-y-z延該軸移動"><a href="#複製-x-y-z延該軸移動" class="headerlink" title="複製(+x, y, z延該軸移動)"></a>複製(+x, y, z延該軸移動)</h4><ul>
+<li>shift + D</li>
+<li>alt + D -&gt; 同物件(捏形狀繪同時變更)<br>z -&gt; 切換模式</li>
+</ul>
+<h3 id="Cursor"><a href="#Cursor" class="headerlink" title="Cursor"></a>Cursor</h3><ul>
+<li>shift + right -&gt; 更改cursor place</li>
+<li>物件 + . -&gt; 以該物件為中心</li>
+<li>shift + S -&gt; Cursor to selected -&gt; Cursor至該物件中心</li>
+<li>shift + S -&gt; selected to Cursor -&gt; 物件移動至Cursor<br>right -&gt; shed smooth -&gt; 物件平滑</li>
+</ul>
+<h3 id="攝影機"><a href="#攝影機" class="headerlink" title="攝影機"></a>攝影機</h3><ul>
+<li>0 -&gt; 攝影機角度</li>
+<li>物件 + . -&gt; ctrl + alt + 0 -&gt; 以物體為攝影中心<br>H -&gt; 物件消失<br>A + H -&gt; 隱藏所有物件<br>alt + H -&gt; 重新出現</li>
+</ul>
+<h3 id="object-mode-left-top"><a href="#object-mode-left-top" class="headerlink" title="object mode(left top)"></a>object mode(left top)</h3><ul>
+<li>ctrl + P -&gt; parent</li>
+<li>alt + P -&gt; clear parent<br>tab -&gt; 切換 object &#x2F; edit mode<br>ctrl + tab -&gt; different mode 選單<br>F3 -&gt; search func</li>
+</ul>
+<h3 id="edit-mode"><a href="#edit-mode" class="headerlink" title="edit mode"></a>edit mode</h3><p>1, 2, 3 -&gt; 點線面<br>E -&gt; 延伸(可搭配R, S, G)<br>ctrl + R -&gt; 新增loop<br>alt + 點線面 -&gt; 選一整圈<br>shift + 點線面 -&gt; choose multiple<br>ctrl + 點線面 -&gt; 選取沿途路徑<br>點線面 + X -&gt; 刪除所選<br>F -&gt; 填補線面</p>
+<h2 id="modifiers"><a href="#modifiers" class="headerlink" title="modifiers"></a>modifiers</h2><h3 id="array"><a href="#array" class="headerlink" title="array"></a>array</h3><p>複製物件(可多個)<br>能更改物件間距(x, y, z) 疊加使用(同時x, y, z增加..等)<br>apply -&gt; 確認<br>realtime -&gt; 工作空間中可顯示物件(尚未apply不會顯示)<br>render -&gt; 算圖不會顯示</p>
+<h3 id="plain-axes"><a href="#plain-axes" class="headerlink" title="plain axes"></a>plain axes</h3><p>shift + A -&gt; empty -&gt; plain axes -&gt; 可輔助使用<br>關閉relative offset<br>subject 右鍵 -&gt; origin to 3D Cursor<br>接著可以以中心為圓心複製物件</p>
+<h2 id="bevel"><a href="#bevel" class="headerlink" title="bevel"></a>bevel</h2><p>更改物件島角<br>segments 增加面數</p>
+<h2 id="bollean"><a href="#bollean" class="headerlink" title="bollean"></a>bollean</h2><h3 id="intersect"><a href="#intersect" class="headerlink" title="intersect"></a>intersect</h3><h3 id="union重合"><a href="#union重合" class="headerlink" title="union重合"></a>union重合</h3><h3 id="difference只留下有重疊部分"><a href="#difference只留下有重疊部分" class="headerlink" title="difference只留下有重疊部分"></a>difference只留下有重疊部分</h3><h2 id="mirror"><a href="#mirror" class="headerlink" title="mirror"></a>mirror</h2><h2 id="skin"><a href="#skin" class="headerlink" title="skin"></a>skin</h2><p>外擴點, 面</p>
 
 		</div>
 
@@ -694,7 +722,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2026-02-20 21:09:19
+                    :</strong> 2026-02-28 17:38:17
             </li>
         
         <li>
@@ -815,7 +843,7 @@
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
 		<div class="page-title">Blender basic function</div>
-		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%BB%E5%8B%95%E8%A6%96%E7%AA%97"><span class="nav-text">移動視窗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6%E8%AE%8A%E5%BD%A2"><span class="nav-text">物件變形</span></a></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%BB%E5%8B%95%E8%A6%96%E7%AA%97"><span class="nav-text">移動視窗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6%E8%AE%8A%E5%BD%A2"><span class="nav-text">物件變形</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6"><span class="nav-text">物件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cursor"><span class="nav-text">Cursor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%9D%E5%BD%B1%E6%A9%9F"><span class="nav-text">攝影機</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#object-mode-left-top"><span class="nav-text">object mode(left top)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#edit-mode"><span class="nav-text">edit mode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#modifiers"><span class="nav-text">modifiers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#array"><span class="nav-text">array</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#plain-axes"><span class="nav-text">plain axes</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bevel"><span class="nav-text">bevel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bollean"><span class="nav-text">bollean</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#intersect"><span class="nav-text">intersect</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#union%E9%87%8D%E5%90%88"><span class="nav-text">union重合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#difference%E5%8F%AA%E7%95%99%E4%B8%8B%E6%9C%89%E9%87%8D%E7%96%8A%E9%83%A8%E5%88%86"><span class="nav-text">difference只留下有重疊部分</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mirror"><span class="nav-text">mirror</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#skin"><span class="nav-text">skin</span></a></li></ol>
 
 	</div>
 </div>
