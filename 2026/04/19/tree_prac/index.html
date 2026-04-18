@@ -87,15 +87,17 @@
         
         <meta name="description" content="爆肝浣熊">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Tree practce">
 <meta property="og:url" content="https://judy326879.github.io/2026/04/19/tree_prac/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="爆肝浣熊">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://judy326879.github.io/images/22.jpg">
-<meta property="article:published_time" content="2026-04-18T20:01:21.470Z">
-<meta property="article:modified_time" content="2026-04-18T20:01:21.470Z">
+<meta property="article:published_time" content="2026-04-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-04-18T20:06:18.092Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="cpp">
+<meta property="article:tag" content="tree">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://judy326879.github.io/images/22.jpg">
     
@@ -109,7 +111,7 @@
     
     <title>
         
-            浣熊blog - 爆肝高二牲
+            Tree practce | 浣熊blog
         
     </title>
 
@@ -467,7 +469,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">18</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">19</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -497,8 +499,12 @@
 
 		<div class="article-title relative w-full">
 			
-			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3"></h1>
+			
+			
+			<img src="/images/p13.jpg" alt="Tree practce" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">Tree practce</h1>
 			</div>
 			
 		</div>
@@ -519,20 +525,61 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2026-04-19 04:01:21</span>
-        <span class="mobile">2026-04-19 04:01:21</span>
+        <span class="desktop">2026-04-19</span>
+        <span class="mobile">2026-04-19</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-04-19 04:01:21</span>
-            <span class="mobile">2026-04-19 04:01:21</span>
+            <span class="desktop">2026-04-19 04:06:18</span>
+            <span class="mobile">2026-04-19 04:06:18</span>
             <span class="hover-info">Updated</span>
         </span>
     
 
     
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/cpp/">cpp</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/cpp/algorithm/">algorithm</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/cpp/">cpp</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/tree/">tree</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -554,21 +601,30 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			
+			<h3 id="主要名詞"><a href="#主要名詞" class="headerlink" title="主要名詞"></a>主要名詞</h3><p>root    根:開始發散的點<br>parent  父節點<br>child   子節點<br>leaf    葉子<br>sibling 兄弟:同個parent<br>subtree 子樹<br>depth   深:root到該點深度<br>level   層<br>height  高</p>
+<h2 id="practice"><a href="#practice" class="headerlink" title="practice"></a>practice</h2><p><a class="link"   target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=b967" >b967. 4. 血緣關係<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>找出最遠的血緣距離<br>hint:先隨便找一點做兩次dfs </p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int n, a, b;</span><br><span class="line">vector&lt;int&gt; adj[100001];</span><br><span class="line">int dis, e;</span><br><span class="line"></span><br><span class="line">void dfs(int u, int p, int depth)&#123;</span><br><span class="line">         //該點, parent, 深</span><br><span class="line">    for(int v:adj[u])&#123;</span><br><span class="line">        if(v == p) continue;</span><br><span class="line">        dfs(v, u, depth+1);</span><br><span class="line">    &#125;</span><br><span class="line">    if(depth&gt;dis)&#123;</span><br><span class="line">        dis = depth;</span><br><span class="line">        e = u;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">int main()&#123;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    for(int i=0;i&lt;n-1;++i)&#123;</span><br><span class="line">        cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">        a--;</span><br><span class="line">        b--;</span><br><span class="line">        adj[a].push_back(b);</span><br><span class="line">        adj[b].push_back(a);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dfs(0, -1, 0);</span><br><span class="line">    dis = 0;</span><br><span class="line">    dfs(e, -1, 0);</span><br><span class="line">    cout &lt;&lt; dis &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p><a class="link"   target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=c463" >c463. apcs 樹狀圖分析 (Tree Analyses)<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>求每點的高度(從最底下往上之最大高度)<br>hint:從root開始 做遞迴</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">typedef long long LL;</span><br><span class="line">using namespace std;</span><br><span class="line">LL n, a, num, root;</span><br><span class="line">vector&lt;LL&gt; parent(100001, 0), len(100001, 0);</span><br><span class="line">vector&lt;LL&gt; child[100001];</span><br><span class="line">LL sum = 0, Max = 0;</span><br><span class="line">void dfs(LL u)&#123;</span><br><span class="line">    LL mx = 0;</span><br><span class="line">    for(int v:child[u])&#123;</span><br><span class="line">        dfs(v);</span><br><span class="line">        mx = max(mx, len[v]+1);</span><br><span class="line">    &#125;</span><br><span class="line">    len[u] = mx;</span><br><span class="line">&#125;</span><br><span class="line">int main()&#123;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    for(int i=1;i&lt;=n;++i)&#123;</span><br><span class="line">        cin &gt;&gt; num;</span><br><span class="line">        for(int j=0;j&lt;num;++j)&#123;</span><br><span class="line">            cin &gt;&gt; a;</span><br><span class="line">            child[i].push_back(a);</span><br><span class="line">            parent[a] = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i=1;i&lt;=n;++i)&#123;</span><br><span class="line">        if(parent[i]==0) root = i;</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(root);</span><br><span class="line">    for(int i=1;i&lt;=n;++i) sum+=len[i];</span><br><span class="line">    cout &lt;&lt; root &lt;&lt; &#x27;\n&#x27; &lt;&lt; sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>笨方法:跑每一個leaf直到走到root 經過的點再求最大高<br>因為中間點會重複跑到所以複雜度大很多</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">typedef long long LL;</span><br><span class="line">using namespace std;</span><br><span class="line">LL n, a, num, root;</span><br><span class="line">vector&lt;LL&gt; parent(100001, 0), len(100001, 0);</span><br><span class="line">set&lt;int&gt; s;</span><br><span class="line">LL sum = 0, Max = 0;</span><br><span class="line">void dfs(LL u, LL depth)&#123;</span><br><span class="line">    len[u] = max(len[u], depth);</span><br><span class="line">    if(parent[u]!=0) dfs(parent[u], depth+1);</span><br><span class="line">&#125;</span><br><span class="line">int main()&#123;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    for(int i=1;i&lt;=n;++i)&#123;</span><br><span class="line">        cin &gt;&gt; num;</span><br><span class="line">        for(int j=0;j&lt;num;++j)&#123;</span><br><span class="line">            cin &gt;&gt; a;</span><br><span class="line">            s.insert(i);</span><br><span class="line">            parent[a] = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i=1;i&lt;=n;++i)&#123;</span><br><span class="line">        if(parent[i]==0) root = i;</span><br><span class="line">        if(s.find(i)==s.end()) dfs(i, 0);</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i=1;i&lt;=n;++i) sum += len[i];</span><br><span class="line">    cout &lt;&lt; root &lt;&lt; &#x27;\n&#x27; &lt;&lt; sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p><a class="link"   target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=h029" >h029. 202001_4 貨物分配
+<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>題目看懂就通 會用到類似上一題的遞迴概念</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int n, m, a, b, c;</span><br><span class="line">vector&lt;int&gt; value(2*100001, 0), w(10005);</span><br><span class="line">vector&lt;int&gt; L(2*100001), R(2*100001);</span><br><span class="line">void pull(int u)&#123;</span><br><span class="line">    if(u&gt;=n)&#123;</span><br><span class="line">        return ;</span><br><span class="line">    &#125;</span><br><span class="line">    pull(L[u]);</span><br><span class="line">    pull(R[u]);</span><br><span class="line">    value[u] = value[L[u]] + value[R[u]];</span><br><span class="line">&#125;</span><br><span class="line">int main()&#123;</span><br><span class="line">    ios_base::sync_with_stdio(0);</span><br><span class="line">    cin.tie(0);</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    for(int i=n;i&lt;2*n;++i) cin &gt;&gt; value[i];</span><br><span class="line">    for(int i=0;i&lt;m;++i) cin &gt;&gt; w[i];</span><br><span class="line">    for(int i=0;i&lt;n-1;++i)&#123;</span><br><span class="line">        cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;</span><br><span class="line">        L[a] = b;</span><br><span class="line">        R[a] = c;</span><br><span class="line">    &#125;</span><br><span class="line">    pull(1);</span><br><span class="line">    for(int i=0;i&lt;m;++i)&#123;</span><br><span class="line">        int it = 1;</span><br><span class="line">        while(it&lt;n)&#123;</span><br><span class="line">            int left = L[it];</span><br><span class="line">            int right = R[it];</span><br><span class="line">            if(value[left]&lt;=value[right]) it = left;</span><br><span class="line">            else it = right;</span><br><span class="line">            value[it] += w[i];</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; it &lt;&lt; &quot; &quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 		</div>
 
 		
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> </li>
+        <li><strong>Title:</strong> Tree practce</li>
         <li><strong>Author:</strong> 浣熊</li>
         <li><strong>Created at
-                :</strong> 2026-04-19 04:01:21</li>
+                :</strong> 2026-04-19 00:00:00</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2026-04-19 04:01:21
+                    :</strong> 2026-04-19 04:06:18
             </li>
         
         <li>
@@ -590,6 +646,18 @@
 		</div>
 		
 
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/cpp/">#cpp</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/tree/">#tree</a>&nbsp;
+			</li>
+			
+		</ul>
 		
 
 		
@@ -750,8 +818,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
-		<div class="page-title"></div>
-		
+		<div class="page-title">Tree practce</div>
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E5%90%8D%E8%A9%9E"><span class="nav-text">主要名詞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#practice"><span class="nav-text">practice</span></a></li></ol>
 
 	</div>
 </div>
